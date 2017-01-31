@@ -9,7 +9,8 @@
 class Commercial : public Employer
 {
 public:
-  Commercial();  
+  Commercial();
+  Commercial(string name, string firstName, int age); 
 };
 
 #endif

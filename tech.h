@@ -8,10 +8,11 @@
 
 using namespace std;
 
-class Tech : public employé
+class Tech : public Employer
 {
 public:
   Tech();
+  Tech(string name, string firstName, int age);
 
 };
 

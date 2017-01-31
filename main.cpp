@@ -3,15 +3,38 @@
 #include <time.h>
 
 #include "entreprise.h"
+#include "vendeur.h"
+#include "representant.h"
+#include "interim.h"
+#include "tech.h"
 
 using namespace std;
 
 int main()
 {
   Entreprise test("VONY");
-  std::cout << "Societe : " << test.getName() << endl;
-  test.addVendeur(Paul("Paul", "", 34, 10));
-  test.addVendeur(Pierre("Pierre", "", 28, 5));
-  test.addVendeur(Jacques("Jacques", "", 56, 1));
-  std::cout << "Vendeurs : " << test.getVendeur() << endl;
+  Vendeur Paul("Paul", "", 22, 10);
+  test.addVendeur(Paul);
+  Vendeur Pierre("Pierre", "", 22, 5);
+  test.addVendeur(Pierre);
+  Vendeur Jacques("Jacques", "", 22, 1);
+  test.addVendeur(Jacques);
+  Representant Rachel("Rachel", "", 23, 3, 10);
+  test.addRep(Rachel);
+  Representant Remi("Remi", "", 23, 2, 8);
+  test.addRep(Remi);
+  Tech Tanguy("Tanguy", "", 31);
+  test.addTech(Tanguy);
+  Tech Teo("Teo", "", 33);
+  test.addTech(Teo);
+  Interim Idris("Idris", "", 45, 75);
+  test.addInterim(Idris);
+  Interim Isaac("Isaac", "", 35, 50);
+  test.addInterim(Isaac);
+  Interim Irene("Irene", "", 54, 50);
+  test.addInterim(Irene);
+  Interim Igor("Igor", "", 25, 0);
+  test.addInterim(Igor);
+  test.displayState();
+
 }

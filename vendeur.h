@@ -10,7 +10,7 @@ class Vendeur : public Commercial
 {
 public:
   Vendeur();
-  Vendeur(double nb_prime);
+  Vendeur(string name, string firstName, int age,  double nbPrime);
 };
 
 #endif

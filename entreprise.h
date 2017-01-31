@@ -7,15 +7,15 @@
 
 #include "vendeur.h"
 #include "representant.h"
-#include "Inter.h"
-#include "SLRC.h"
+#include "interim.h"
+#include "tech.h"
 
 using namespace std ;
 
 class Entreprise {
 public:
   Entreprise();
-  Entreprise(string name);
+  Entreprise(string brand);
 
   void setName (string name);
   string getName();
@@ -23,22 +23,24 @@ public:
   void addVendeur (Vendeur value);
   vector<Vendeur> getVendeur() const;
 
-  void addRep (Rep value);
-  vector<Rep> getRep() const;
+  void addRep (Representant value);
+  vector<Representant> getRep() const;
 
   void addInterim (Interim value);
   vector<Interim> getInterim() const;
 
-  void addSlrc (Slrc value);
-  vector<Slrc> getSlrc() const;
+  void addTech (Tech value);
+  vector<Tech> getTech() const;
+
+  void displayState();
 
 private:
   string m_brand;
 
   vector<Vendeur> m_vendeur;
-  vector<Rep> m_rep;
+  vector<Representant> m_rep;
   vector<Interim> m_interim;
-  vector<Slrc> m_slrc;
+  vector<Tech> m_tech;
 
 };
 

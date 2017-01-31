@@ -10,7 +10,7 @@ class Representant : public Commercial
 {
 public:
   Representant();
-  Representant(double nb_prime, double nb_deplacement);
+  Representant(string name, string firstName, int age, double nbPrime, double nbDep);
 };
 
 #endif

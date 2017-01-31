@@ -1,9 +1,13 @@
 #include "representant.h"
 
-Representant::Representant() :
+Representant::Representant()
 {
+  this->setPrime(250);
 }
 
-Representant::Representant(double nb_prime, double nb_deplacement) : m_nbPrime(nb_prime), m_prime(250), m_nbDep(nb_deplacement)
+Representant::Representant(string name, string firstName, int age, double nbPrime, double nbDep) : Commercial(name, firstName, age)
 {
+  this->setNbPrime(nbPrime);
+  this->setNbDep(nbDep);
+  this->setPrime(250);
 }

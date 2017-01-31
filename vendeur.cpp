@@ -1,11 +1,12 @@
 #include "vendeur.h"
 
-Vendeur::Vendeur() :
+Vendeur::Vendeur()
 {
-
+  this->setPrime(100);
 }
 
-Vendeur::Vendeur(double nb_prime) : m_nbPrime(nb_prime), m_prime(100)
+Vendeur::Vendeur(string name, string firstName, int age, double nbPrime) : Commercial(name, firstName, age)
 {
-  
+  this->setNbPrime(nbPrime);
+  this->setPrime(100);
 }
