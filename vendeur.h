@@ -11,6 +11,12 @@ class Vendeur : public Commercial
 public:
   Vendeur();
   Vendeur(string name, string firstName, int age,  double nbPrime);
+
+  double calcSalaire();
+  
+private:
+  double m_nbPrime;
+  double m_prime;
 };
 
 #endif

@@ -14,6 +14,11 @@ public:
   Interim();
   Interim(string name, string firstName, int age, double nbHeure);
 
+  double calcSalaire();
+
+private:
+  double m_nbHeure;
+
 };
 
 #endif

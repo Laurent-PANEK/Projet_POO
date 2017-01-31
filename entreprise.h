@@ -17,8 +17,8 @@ public:
   Entreprise();
   Entreprise(string brand);
 
-  void setName (string name);
-  string getName();
+  void setBrand(string name);
+  string getBrand();
 
   void addVendeur (Vendeur value);
   vector<Vendeur> getVendeur() const;

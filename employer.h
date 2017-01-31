@@ -21,20 +21,8 @@ public:
 
   double calcSalaire();
 
-  void setNbPrime(double value);
-  double getNbPrime();
-
-  void setNbDep(double value);
-  double getNbDep();
-
-  void setNbHours(double value);
-  double getNbHours();
-
-  void setBaseSalaire(double value);
-  void setPrime(double value);
-
-   string getNameE();
-   string getFirstNameE();
+  string getName();
+  string getFirstName();
 
 protected:
   std::string m_name;
@@ -42,11 +30,6 @@ protected:
   int m_age;
   double m_salaire;
 
-  double m_baseSalaire;
-  double m_nbPrime;
-  double m_prime;
-  double m_nbDep;
-  double m_nbHeure;
 };
 
 #endif

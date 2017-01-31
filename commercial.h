@@ -10,7 +10,11 @@ class Commercial : public Employer
 {
 public:
   Commercial();
-  Commercial(string name, string firstName, int age); 
+  Commercial(string name, string firstName, int age);
+
+protected:
+  double m_baseSalaire;
+  
 };
 
 #endif

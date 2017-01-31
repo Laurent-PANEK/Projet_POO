@@ -14,6 +14,11 @@ public:
   Tech();
   Tech(string name, string firstName, int age);
 
+  double calcSalaire();
+
+private:
+  double m_baseSalaire;
+
 };
 
 #endif
