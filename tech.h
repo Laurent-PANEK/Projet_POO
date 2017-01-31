@@ -16,7 +16,7 @@ public:
 
   double calcSalaire();
 
-private:
+protected:
   double m_baseSalaire;
 
 };
